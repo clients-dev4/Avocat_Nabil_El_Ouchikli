@@ -27,7 +27,7 @@
       "Bash(mv meilleur-avocat-nanterre.html meilleur-avocat-92-nanterre.html)",
       "Bash(grep -rn \"meilleur-avocat-seine-saint-denis\\\\.html\\\\|meilleur-avocat-essonne\\\\.html\\\\|meilleur-avocat-hauts-de-seine\\\\.html\\\\|meilleur-avocat-val-de-marne\\\\.html\\\\|meilleur-avocat-val-d-oise\\\\.html\\\\|meilleur-avocat-seine-et-marne\\\\.html\\\\|meilleur-avocat-yvelines\\\\.html\\\\|meilleur-avocat-bouches-du-rhone\\\\.html\\\\|meilleur-avocat-creteil\\\\.html\\\\|meilleur-avocat-evry\\\\.html\\\\|meilleur-avocat-meaux\\\\.html\\\\|meilleur-avocat-melun\\\\.html\\\\|meilleur-avocat-nanterre\\\\.html\\\\|meilleur-avocat-pontoise\\\\.html\\\\|meilleur-avocat-versailles\\\\.html\" *.html sitemap.xml)",
       "Bash(mv meilleur-avocat-paris-75.html meilleur-avocat-75-paris-75.html)",
-      "Bash(sed -i 's|meilleur-avocat-paris-75\\\\.html|meilleur-avocat-75-paris.html|g' *.html sitemap.xml)",
+      "Bash(sed -i 's|meilleur-avocat-paris-75\\\\.html|meilleur-avocat-paris-75.html|g' *.html sitemap.xml)",
       "Bash(ls meilleur-avocat-75-paris*)",
       "Bash(ls meilleur-avocat-paris-75*)",
       "Bash(mv meilleur-avocat-paris-75.html meilleur-avocat-75-paris-idf.html)",
@@ -59,8 +59,8 @@
       "Bash(mv meilleur-avocat-91-evry.html meilleur-avocat-evry.html)",
       "Bash(mv meilleur-avocat-92-nanterre.html meilleur-avocat-nanterre.html)",
       "Bash(grep -rn 'meilleur-avocat-bouches-du-rhone\\\\.html\\\\|meilleur-avocat-essonne\\\\.html\\\\|meilleur-avocat-hauts-de-seine\\\\.html\\\\|meilleur-avocat-paris-75\\\\.html\\\\|meilleur-avocat-seine-et-marne\\\\.html\\\\|meilleur-avocat-seine-saint-denis\\\\.html\\\\|meilleur-avocat-val-d-oise\\\\.html\\\\|meilleur-avocat-val-de-marne\\\\.html\\\\|meilleur-avocat-yvelines\\\\.html' *.html)",
-      "Bash(sed -n 's/.*<title>\\\\\\([^<]*\\\\\\)<\\\\/title>.*/TITLE: \\\\1/p' meilleur-avocat-75-paris.html)",
-      "Bash(sed -n 's/.*<meta name=\"description\" content=\"\\\\\\([^\"]*\\\\\\)\".*/DESC: \\\\1/p' meilleur-avocat-75-paris.html)",
+      "Bash(sed -n 's/.*<title>\\\\\\([^<]*\\\\\\)<\\\\/title>.*/TITLE: \\\\1/p' meilleur-avocat-paris-75.html)",
+      "Bash(sed -n 's/.*<meta name=\"description\" content=\"\\\\\\([^\"]*\\\\\\)\".*/DESC: \\\\1/p' meilleur-avocat-paris-75.html)",
       "Bash(sed -n 's/.*<title>\\\\\\([^<]*\\\\\\)<\\\\/title>.*/TITLE: \\\\1/p' meilleur-avocat-75-paris-idf.html)",
       "Bash(sed -n 's/.*<meta name=\"description\" content=\"\\\\\\([^\"]*\\\\\\)\".*/DESC: \\\\1/p' meilleur-avocat-75-paris-idf.html)",
       "Bash(sed -i 's|<title>avocat correctionnel 93 - Avocat Tribunal Correctionnel</title>|<title>Avocat Correctionnel 93 Seine-Saint-Denis | Maître Nabil EL OUCHIKLI</title>|' avocat-correctionnel.html)",
@@ -82,7 +82,8 @@
       "Bash(sed -i '/^    <!-- Dans la Presse -->$/d' neo-avocats.html)",
       "Bash(sed -i '/^    <!-- Podcast -->$/d' neo-avocats.html)",
       "Bash(sed -i '/^    <!-- CTA -->$/d' neo-avocats.html)",
-      "Bash(grep -c '<!--' *.html *.xml)"
+      "Bash(grep -c '<!--' *.html *.xml)",
+      "Bash(git push:*)"
     ],
     "additionalDirectories": [
       "c:\\Users\\Webpr\\Desktop\\Entreprises\\WebPrime\\Sites_code\\Nabil_Avocats"
